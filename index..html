@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>VIT CHENNAI ANIMATION</title>
+  <style>
+    body {
+      margin: 0;
+      overflow: hidden;
+    }
+
+    .moving-text {
+      position: absolute;
+      font-size: 12px; 
+      font-family: Arial, sans-serif;
+      font-style: italic;
+      animation: moveText 8s infinite, changeAttributes 4s infinite;
+    }
+
+    @keyframes moveText {
+      0% {
+        top: 0;
+        left: 0;
+      }
+      25% {
+        top: 50%;
+        left: 50%;
+      }
+      50% {
+        top: 100%;
+        left: 100%;
+      }
+      75% {
+        top: 50%;
+        left: 0;
+      }
+      100% {
+        top: 0;
+        left: 0;
+      }
+    }
+
+    @keyframes changeAttributes {
+      0% {
+        font-size: 12px;
+        font-family: Arial, sans-serif;
+        font-style: italic;
+      }
+      50% {
+        font-size: 24px;
+        font-family: 'Courier New', monospace;
+        font-style: normal;
+      }
+      100% {
+        font-size: 36px;
+        font-family: 'Times New Roman', serif;
+        font-style: oblique;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="moving-text">Kaduvaleyyyy Ajitheyyy....</div>
+</body>
+</html>
