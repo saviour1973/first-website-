@@ -1,0 +1,27 @@
+{
+  "name": "career-craft",
+  "version": "1.1.0",
+  "description": "CareerCraft: An AI-powered web app to generate professional resumes and tailored cover letters effortlessly.",
+  "main": "app.py",
+  "scripts": {
+    "dev": "python app.py",
+    "start": "gunicorn app:app",
+    "build": "echo 'No build step required for this Flask-based application'"
+  },
+  "author": "Your Name or Team Name",
+  "license": "MIT",
+  "keywords": [
+    "resume",
+    "cover-letter",
+    "AI",
+    "career",
+    "job",
+    "Flask"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/yourusername/career-craft"
+  },
+  "dependencies": {},
+  "devDependencies": {}
+}
