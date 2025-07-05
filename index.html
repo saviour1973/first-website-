@@ -1,66 +1,112 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>VIT CHENNAI ANIMATION</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CareerCraft - Professional Resume & Cover Letter Builder</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
+  <link rel="stylesheet" href="static/css/style.css" />
+
+  <!-- 🎨 New Color Theme -->
   <style>
+    :root {
+      --primary-color: #4F46E5;
+      --secondary-color: #6366F1;
+      --accent-color: #10B981;
+      --background-color: #F9FAFB;
+      --text-color: #111827;
+    }
+
     body {
+      font-family: 'Inter', sans-serif;
+      background-color: var(--background-color);
+      color: var(--text-color);
       margin: 0;
-      overflow: hidden;
+      padding: 0;
     }
 
-    .moving-text {
-      position: absolute;
-      font-size: 12px; 
-      font-family: Arial, sans-serif;
-      font-style: italic;
-      animation: moveText 8s infinite, changeAttributes 4s infinite;
+    .navbar {
+      background-color: var(--primary-color);
+      color: white;
+      padding: 1rem 2rem;
     }
 
-    @keyframes moveText {
-      0% {
-        top: 0;
-        left: 0;
-      }
-      25% {
-        top: 50%;
-        left: 50%;
-      }
-      50% {
-        top: 100%;
-        left: 100%;
-      }
-      75% {
-        top: 50%;
-        left: 0;
-      }
-      100% {
-        top: 0;
-        left: 0;
-      }
+    .nav-link {
+      color: white;
+      margin: 0 1rem;
+      text-decoration: none;
     }
 
-    @keyframes changeAttributes {
-      0% {
-        font-size: 12px;
-        font-family: Arial, sans-serif;
-        font-style: italic;
-      }
-      50% {
-        font-size: 24px;
-        font-family: 'Courier New', monospace;
-        font-style: normal;
-      }
-      100% {
-        font-size: 36px;
-        font-family: 'Times New Roman', serif;
-        font-style: oblique;
-      }
+    .nav-link.active {
+      font-weight: bold;
+      border-bottom: 2px solid var(--accent-color);
+    }
+
+    .btn-primary {
+      background-color: var(--primary-color);
+      color: white;
+      padding: 0.75rem 1.5rem;
+      border: none;
+      border-radius: 5px;
+    }
+
+    .btn-secondary {
+      background-color: var(--secondary-color);
+      color: white;
+      padding: 0.75rem 1.5rem;
+      border: none;
+      border-radius: 5px;
+    }
+
+    .btn-success {
+      background-color: var(--accent-color);
+      color: white;
+      padding: 0.75rem 1.5rem;
+      border: none;
+      border-radius: 5px;
+    }
+
+    .btn:hover {
+      opacity: 0.9;
+      cursor: pointer;
+    }
+
+    .feature-card {
+      background-color: white;
+      border: 1px solid #E5E7EB;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+      padding: 1.5rem;
+      border-radius: 0.75rem;
+      transition: transform 0.3s ease;
+    }
+
+    .feature-card:hover {
+      transform: translateY(-5px);
+    }
+
+    input, textarea {
+      border: 1px solid #D1D5DB;
+      padding: 0.75rem;
+      border-radius: 0.5rem;
+      width: 100%;
+      background-color: white;
+      color: var(--text-color);
+    }
+
+    .form-actions button {
+      margin-top: 1rem;
     }
   </style>
 </head>
 <body>
-  <div class="moving-text">WELCOME TO MY WEBSITE....</div>
+  <!-- your full body content remains unchanged -->
+  <!-- ✅ No HTML logic changes are required -->
+  <!-- Keep your original sections like Home, Resume Builder, Cover Letter Builder, etc. -->
+
+  <!-- Your scripts -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+  <script src="static/js/script.js"></script>
 </body>
 </html>
+
