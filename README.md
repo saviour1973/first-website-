@@ -28,4 +28,38 @@ An AI-powered resume and cover letter builder with a beautiful, human-like desig
 ---
 
 ## 📂 File Structure
+resume-cover-letter-writer/
+├── app.py # Flask backend
+├── index.html # Main HTML
+├── requirements.txt # Python dependencies
+├── package.json # Project metadata
+├── Procfile # Deployment setup (Heroku/Gunicorn)
+├── static/
+│ ├── css/style.css # Styles
+│ └── js/script.js # Frontend logic
+└── README.md # This file
+
+
+---
+
+## ⚙️ Setup Instructions
+
+### 1. Prerequisites
+- Python 3.8 or higher
+- (Optional) OpenAI API key
+
+### 2. Installation
+
+```bash
+git clone https://github.com/KavyaPatel83/Resume-Cover-Letter-Writer.git
+cd Resume-Cover-Letter-Writer
+pip install -r requirements.txt
+
+export OPENAI_API_KEY="your-api-key-here"  # Or use .env file
+python app.py
+python -m venv venv
+source venv/bin/activate       # Windows: venv\Scripts\activate
+pip install -r requirements.txt
+
+
 
